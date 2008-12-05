@@ -1,3 +1,3 @@
 ==v1.0.2==
 
-1.为SafeSqlProcesserFactor增加getByHibernateDialect()方法
+1.add SafeSqlProcesserFactory.getByHibernateDialect() method
