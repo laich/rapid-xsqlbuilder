@@ -5,7 +5,7 @@
 对SQL注入攻击的防范 
 问题:
 手工构造SQL语句的情况
-
+{{{
 String sql = "select * from user where 1=1 ";
 String user_id = (String)filters.get("user_id");
 if( user_id != null && user_id.length() > 0) {
@@ -15,6 +15,7 @@ String age = (String)filters.get("age");
 if(age != null && age.length() > 0) {
    sql = sql + " and age > " + age;
 }
+}}}
 过多的if判断导致sql语句不清晰,我们再来看下rapid-xsqlbuilder的做法
 
 rapid-xsqlbuilder构造SQL例子
